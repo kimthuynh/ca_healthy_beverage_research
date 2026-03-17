@@ -205,3 +205,14 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+#excluding the following files
+CA_Beverage_Intelligence_Project_Summary.docx
+
+#exclude enviroment
+env/
+project_information/
+Project_Summary_v2.docx
+P005_project_notes.xlsx
+archived/
+Project_Summary_v3.docx

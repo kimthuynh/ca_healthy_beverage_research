@@ -1,0 +1,100 @@
+/* CA Beverage Intelligence Dashboard */
+
+:root {
+    --bg: #111827;
+    --surface: #1F2937;
+    --border: #374151;
+    --blue: #06B6D4;
+    --green: #84E0C3;
+    --red: #F58484;
+    --text: #F9FAFB;
+    --muted: #6B7280;
+}
+
+/* App background */
+.stApp {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', 'Courier New', monospace;
+}
+
+/* Main content area */
+.block-container {
+    padding: 2rem 2rem 4rem 2rem;
+    max-width: 1200px;
+}
+
+/* Panel cards */
+.panel-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: var(--surface);
+    border-right: 1px solid var(--border);
+}
+
+section[data-testid="stSidebar"] .stSelectbox label,
+section[data-testid="stSidebar"] p {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+/* Metric tiles */
+[data-testid="stMetric"] {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--muted) !important;
+    font-size: 0.75rem !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--blue) !important;
+    font-size: 1.5rem !important;
+}
+
+/* Dividers */
+hr {
+    border-color: var(--border);
+}
+
+/* Callout text */
+.callout {
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Last updated badge */
+.last-updated {
+    color: var(--muted);
+    font-size: 0.75rem;
+    text-align: right;
+}

@@ -2,7 +2,7 @@
 07_brand_scorer.py
 Composite scoring model: normalize 7 signals → weighted score → rank 20 brands → Top 10.
 Outputs: data/processed/top20_scored.csv
-         data/output/top10_brands.csv
+         data/output/top10_validated.csv
 """
 
 import os
@@ -134,7 +134,7 @@ def run():
 
     # Save Top 10
     top10 = df.head(10).copy()
-    top10_path = os.path.join(DATA_OUTPUT, "top10_brands.csv")
+    top10_path = os.path.join(DATA_OUTPUT, "top10_validated.csv")
     top10.to_csv(top10_path, index=False)
     print(f"Saved top10 → {top10_path}")
 

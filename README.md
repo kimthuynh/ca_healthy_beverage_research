@@ -19,7 +19,7 @@ Outputs feed a Streamlit dashboard, a growth forecaster, and an automated monthl
 ### Data Sources
 | Tool | Purpose |
 |------|---------|
-| Apify Reddit Scraper | Brand mentions, community discussion |
+| Arctic Shift | Brand mentions, community discussion |
 | Pytrends | Search demand, seasonality, CA geo breakdown |
 | SerpAPI | Online vs. in-store purchase signals |
 | YouTube Data API | Video reviews, comment sentiment |
